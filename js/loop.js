@@ -92,4 +92,20 @@ console.log('Do While Loop');
 
 // continue and Break
 
+
+// While loop
+
+// let n = 1;
+
+// while (n < 3) {
+  
+
+//   console.log(n--);
+// }
+
+// console.log('while loop end');
+// expected output: 3
+
+console.log('While loop end');
+
 console.log('Continue and Break formatting');
