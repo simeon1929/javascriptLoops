@@ -17,13 +17,15 @@ for(let x= 0; x<10 ; x++) {
 }
 
 
-// switch case 
+// switch case days
+console.log('days calculation');
 
-let days = prompt('Enter Your number ', 1)
+
+let days = 9
 
 switch(days) {
     case 1:
-        console.log('Monday Working day' );
+        console.log('Monday Working day');
     break;
 
     case 2:
@@ -43,15 +45,31 @@ switch(days) {
     break;
 
     case 6:
-        console.log('Saturday Working day');
-    break;
+    //     console.log('Saturday Working day');
+    // break;
 
     case 7:
-        console.log('Sunday Working day');
+        console.log('Holidays days');
     break;
 
     default:
-        console.log('Sunday Working day');
+        console.log('What is your day');
     break;
     
+}
+
+
+// switch case loop number 
+
+console.log('switch case loop with number')
+
+const swithNumber = 20 
+
+switch(true){
+    case swithNumber > 10 || swithNumber ==21:
+        console.log('you are no ten', swithNumber);
+    break;
+
+    default:
+        console.log('Javascript end')
 }
