@@ -3,6 +3,10 @@
 
 //print 10 Numbers
 
+//continue and break 
+
+
+
 
 for(let x= 0; x<10 ; x++) {
     //console.log('number is ', x)
@@ -73,3 +77,19 @@ switch(true){
     default:
         console.log('Javascript end')
 }
+
+
+// Do While loop
+
+console.log('Do While Loop');
+
+// do {
+//     console.log('Continue playing');
+//     var playConform = confirm('Are you still cotiniue the game')
+// } while(playConform) // condition 
+
+// console.log('Play end');
+
+// continue and Break
+
+console.log('Continue and Break formatting');
