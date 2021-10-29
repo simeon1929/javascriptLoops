@@ -56,3 +56,31 @@ function condi(name, age){
 let resultCod = condi('simeon', 26)
 
 console.log(resultCod);
+
+
+// function duplcate
+
+function dupFun1(name, age) {
+    return document.write('<h1>'+'Your name is '+ name + ' & Your age is '+ age)
+
+}
+
+dupFun1('Simeon', 32)
+
+function dupFun1(name, age) {
+    return document.write('<h1>'+'Your name is '+ name + ' & Your age is '+ age)
+
+}
+dupFun1('Beulah', 27)
+
+function duplicate() {
+    console.log('Am a original');
+}
+duplicate()
+
+function duplicate(message) {
+    //console.log(message);
+    console.log('second Original');
+}
+
+duplicate('I am second')
