@@ -113,13 +113,33 @@ console.log('Continue and Break formatting');
 
 let x = 1;
 while(x<=15){
-    document.write('<h2>'+ x +'</h2>')
-    x = x+2
+    document.write('<h2>'+'Your Inrement Number -'+ x +'</h2>')
+    x = x+1
 }
 
+// alert('hello')
 
 // while loop decrement operator
 
 let numBer = 10;
+
+while(numBer < 20) {
+    console.log('your number :',  numBer++);
+
+    // numBer = numBer +2
+
+
+}
+
+var countdown = 10
+while (countdown >= 0){
+    document.write('<h3>'+ 'Your decrement Number is '+ countdown + '</h3>')
+    //console.log('decrement number is',countdown);
+     countdown = countdown - 1;
+
+    
+}
+
+
 
 // console.log(x);
