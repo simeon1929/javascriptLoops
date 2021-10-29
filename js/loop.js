@@ -121,6 +121,35 @@ while(x<=15){
 
 // while loop decrement operator
 
+// let numBer = 10;
+
+// while(numBer < 20) {
+//     console.log('your number :',  numBer++);
+
+//     // numBer = numBer +2
+
+
+// }
+
+var newCountdown = 10
+while (newCountdown >= 0){
+    document.write('<h3>'+ 'Your decrement Number is '+ newCountdown + '</h3>')
+    //console.log('decrement number is',newCountdown);
+     newCountdown = newCountdown - 1;
+
+    
+}
+
+
+// Another typer while loop
+
+// const newCount = 10 
+
+// while(newCount < 20) {
+//     // console.log("decrement is staring ", newCount+1);
+//     console.log('your number :', newCount++);
+// }
+
 let numBer = 10;
 
 while(numBer < 20) {
@@ -131,15 +160,14 @@ while(numBer < 20) {
 
 }
 
-var countdown = 10
-while (countdown >= 0){
-    document.write('<h3>'+ 'Your decrement Number is '+ countdown + '</h3>')
-    //console.log('decrement number is',countdown);
-     countdown = countdown - 1;
-
-    
-}
-
-
 
 // console.log(x);
+
+let forLoop = document.querySelector('.forLoppContent');
+
+
+
+for(let x=20; x <30; x ++ ) {
+    console.log('new for loop', x);
+    document.write('<h4>'+'For Loop Prastice no starting from'+x+'</<h4>')
+}
