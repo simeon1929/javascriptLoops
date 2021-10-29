@@ -109,3 +109,17 @@ console.log('Do While Loop');
 console.log('While loop end');
 
 console.log('Continue and Break formatting');
+
+
+let x = 1;
+while(x<=15){
+    document.write('<h2>'+ x +'</h2>')
+    x = x+2
+}
+
+
+// while loop decrement operator
+
+let numBer = 10;
+
+// console.log(x);
