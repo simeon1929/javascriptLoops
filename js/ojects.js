@@ -26,12 +26,18 @@ let myobj = {
     gender : 'female',
     haifyun : function(){
         console.log('My name is ' + this.name);
+    },
+    addFun : ()=>{
+        console.log('My age is '+ myobj.age)
     }
 
     
 }
 
+
 myobj.haifyun()
+myobj.addFun()
 
 
 // console.log(obj.sayHi());
+
