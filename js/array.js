@@ -77,12 +77,28 @@ console.log(books.length);
 var addBooks = books.push('Socal Sicene', 'Phycial eduction') // Add last array
 
 console.log(books);
+console.log('Push book positions ',addBooks);
 console.log(books.length);
 
 // Pop Method
 
 var remBook = books.pop()
 console.log(books); // Removed only last book 
+console.log('Pop Removed book is ',remBook);
 console.log(books.length);
+
+// array first item add and removed using Shit and Unshift method 
+
+var food= new Array('Break Fast', 'Lunch', 'Dinner')
+console.log(food);
+
+// Shift method
+
+console.log(food.shift());
+console.log(food); // removed first array item
+
+var addFood = food.unshift('Need to add') // Added a first item 
+console.log(food);
+
 
 
