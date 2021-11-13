@@ -172,5 +172,76 @@ var empDetils2 = {
 console.log(empDetils2);
 
 for(prop in empDetils2) {
-    console.log('employee details-' , empDetils2[prop]);
+    console.log('employee details-' ,prop,  empDetils2[prop]);
+}
+
+
+// how to set bonus 
+
+console.log('bonus');
+var empBonus = {
+    name : 'simeon',
+    age : 22,
+    salary: 2000,
+    bouns :2000
+}
+
+console.log(empBonus);
+empBonus.bouns = 22000
+console.log(empBonus);
+
+Object.defineProperty(empBonus, 'bouns', {
+    configurable : true,
+    writable : false,
+    enumerable : false
+
+})
+
+empBonus.bouns = 4444
+
+for(detls in empBonus) {
+    console.log(detls, empBonus[detls] );
+}
+
+
+// del property 
+
+console.log('del property lOG');
+
+var delEmoloye = {
+    name: 'simeon',
+    age : 22
+}
+
+console.log(delEmoloye);
+
+for (prop in delEmoloye) {
+    console.log(prop, delEmoloye[prop]);
+}
+
+delete delEmoloye.age 
+
+console.log('after delete key result');
+
+for(prop in delEmoloye) {
+    console.log(prop, delEmoloye[prop]);
+}
+
+
+// dont delete age
+
+var delEmoloye1 = {
+    name: 'simeon',
+    age : 22
+}
+
+Object.defineProperty(delEmoloye1, 'age', {
+    configurable: false
+})
+delete delEmoloye1.age 
+
+console.log('after delete key result');
+
+for(prop in delEmoloye1) {
+    console.log(prop, delEmoloye1[prop]);
 }
