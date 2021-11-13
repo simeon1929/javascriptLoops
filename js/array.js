@@ -101,4 +101,27 @@ var addFood = food.unshift('Need to add') // Added a first item
 console.log(food);
 
 
+// Array Reordering methods
 
+//sort method
+var num = [1,3, 5, 2,4]
+console.log(num);
+
+num.sort()
+console.log(num);
+
+// Reverse method 
+
+var foodItems = ['dinner', 'Lunch','Breakfast']
+console.log(foodItems);
+foodItems.reverse()
+console.log(foodItems);
+
+// Numbers in sort and reverse 
+
+var newNum = [2,3,5,4,7,6,1]
+console.log(newNum);
+newNum.sort()
+console.log(newNum);
+newNum.reverse()
+console.log(newNum);
