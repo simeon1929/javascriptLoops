@@ -72,7 +72,6 @@ console.log(employee1.salary);
 var employe2 = {
     name : 'Simeon Haries',
     salary :20000
-
 }
 
 console.log(employe2.name);
@@ -90,7 +89,7 @@ Object.defineProperty(employe2, 'salary', {
     configurable :true,
     writable : false,
     enumerable : true,
-    value : 50
+    //value : 50
 })
 employe2.name ="Beulah",
 
@@ -101,3 +100,77 @@ console.log(employe2.name);
 console.log(employe2.salary);
 
 
+// var employe10 = {
+//     name : 'Bensing',
+//     age : 45,
+//     salary : ' 10000'
+// }
+//  console.log(employe10.salary);
+
+// employe10.salary = "2000"
+
+// console.log(employe10.salary);
+
+// Object.defineProperty(employe10, ' salary',
+//  {
+//      configurable: true,
+//      writable : false,
+//      enumerable : true,
+    
+// })
+
+// employe10.salary = 450000
+
+// console.log(employe10.salary);
+
+
+// object not edtitable 
+
+var emp10 = {
+    name : 'simeon',
+    age : 20,
+    salary : 14000
+}
+
+console.log('salary ', emp10.salary);
+
+Object.defineProperty(emp10, 'salary', {
+    configurable : true,
+    enumerable :true,
+    writable :false,
+    //value : 5000
+})
+
+emp10.salary = 3000
+console.log('salary enumarable ', emp10.salary);
+
+// Obect in loops
+
+console.log('Object in loops');
+
+var empDetls ={
+    name:  "simeon",
+    age : 25,
+    role :'software',
+    salary: 4000
+}
+
+console.log('Role is', empDetls.role);
+
+for (detls in emp10) {
+    console.log('-', detls, empDetls[detls]);
+}
+
+
+var empDetils2 = {
+    name : 'simeon',
+    age : 28,
+    salary : 3500,
+    gender : 'male'
+}
+
+console.log(empDetils2);
+
+for(prop in empDetils2) {
+    console.log('employee details-' , empDetils2[prop]);
+}
