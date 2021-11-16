@@ -125,3 +125,39 @@ newNum.sort()
 console.log(newNum);
 newNum.reverse()
 console.log(newNum);
+
+//Array concat method (clone)
+console.log('concat method || clone');
+
+var fruits = ['apple', 'Orange', 'mango']
+console.log('Fruits is ', fruits);
+var addFruits = ['pineapple', 'kivi']
+console.log('Add fruits ',addFruits);
+
+ addFruits.push('add push One')
+ console.log(addFruits);
+
+ var concatFruites = addFruits.concat('concat')
+console.log('concat fruites', concatFruites);
+
+var concatFrit1 = concatFruites.concat('One', 'Two')
+
+console.log('Concat fruites' ,concatFrit1);
+
+// concat other method
+
+var newFr = ('apple', 'orange')
+console.log('your array details ',newFr);
+var concatFr = newFr.concat('mango ','kivi ', ['newfrOne ', 'newfrtwo'])
+console.log('yout concat details-' , concatFr);
+
+//concat method end
+
+//Array ordring method 
+
+var number = [4, 6, 50]
+
+console.log('Numaber in order is ', number);
+
+
+
