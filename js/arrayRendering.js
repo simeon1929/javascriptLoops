@@ -24,3 +24,30 @@ console.log('Letter reverse is ', letterRev.reverse());
 
 var foodRev = ['Dinner', 'Lunch', 'Break fast']
 console.log('Your food reverse is ', foodRev.reverse());
+
+
+// method of reverse 
+//Step One 
+var newNumber = [1,4,5,7, 100]
+console.log('number is ', newNumber);
+
+//push Step 2
+console.log(newNumber.push(25));
+console.log('After push ', newNumber);
+//Sort Step 3
+console.log('After Reverse ', newNumber.reverse()); // not corect
+//Assending method
+function sortMethod__assending (value1, value2) {
+    return value1 - value2
+}
+newNumber.sort(sortMethod__assending)
+console.log(newNumber);
+
+//Desending method 
+function sort__desending (value1, value2) {
+    if(value1 > value2) return -1
+    else if (value1<value2) return 1
+    else return 0
+}
+newNumber.sort(sort__desending)
+console.log(newNumber);
