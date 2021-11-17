@@ -51,3 +51,30 @@ function sort__desending (value1, value2) {
 }
 newNumber.sort(sort__desending)
 console.log(newNumber);
+
+// Array manupulation Method
+
+console.log('Array manupulation Method');
+
+var fritues = ['Apple', 'Orange', 'Mango']
+console.log('fruites ', fritues);
+var newFruites = fritues
+console.log('New fruites' , newFruites);
+fritues.push(  'New Fr Kiwi')
+console.log('after push method', fritues);
+console.log(fritues);
+//Using concat method
+console.log('Concat method'); 
+var newConcat = fritues.concat('dinner')
+console.log('used concat mthod', newConcat);
+console.log('fruites ', fritues);
+console.log('fruites clone ', newFruites);
+
+var familyMember = ['father', 'mother']
+console.log('family member', familyMember);
+var addFamilymember = familyMember.concat('uncle, aunty') 
+console.log('marrage family member', addFamilymember);
+var finalFamilymember = addFamilymember.concat('Evaniya', ['boy baby', 'boy baby'])
+console.log('final family member', finalFamilymember);
+
+
