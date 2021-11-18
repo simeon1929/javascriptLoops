@@ -95,9 +95,27 @@ var spiceMeth1 = newNum.splice(2,3)
 console.log('after spice method ', spiceMeth1);
 var newNum1 = [1,2,3,4,5,6,7]
 var spliceMethod2 = newNum1.splice(3, newNum1.length-3)
-console.log('Your splice method is ', spliceMethod2);
+console.log('Your splice method removed is ', spliceMethod2);
 // splice del and add method
 var newNum4 = [1,2,3,4,5,6,7]
-var spiceMethod3 = newNum4.splice( 0, 0, 'simeon')
-console.log('Your splice method3 is ' , spiceMethod3);
+console.log('new array is ', newNum4);
+var addNewNum4 = newNum4.splice(1, 1, 'hello')
+console.log(addNewNum4);
+console.log(newNum4);
+
+
+//add splice
+var newNum5 = [1,2,3,4] 
+console.log(newNum5);
+var splice5 = newNum5.splice(0,0, 'simeon')  
+console.log(splice5);
+console.log(newNum5); // add 
+
+//Splice replce
+var newNum6 = [1,2,3,4] 
+console.log('new num ', newNum6);
+var spliceN6 = newNum6.splice(1,1, 'Beualh', 'Evania', 'baby2')
+console.log(spliceN6);
+console.log(newNum6);
+
 
