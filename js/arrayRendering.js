@@ -81,7 +81,7 @@ console.log('final family member', finalFamilymember);
 console.log('slice method is started');
 var names = ['aa', 'bb','cc', 'dd','ee', 'ff']
 console.log('Names ', names);
-var slicemethod1 = names.slice(0,3)
+var slicemethod1 = names.slice(0,3)  
 console.log('slice method betwen', slicemethod1);
 var names2 = ['aa', 'bb','cc', 'dd','ee', 'ff']
 var sliceMethod2 = names2.slice(3)
@@ -97,24 +97,28 @@ var newNum1 = [1,2,3,4,5,6,7]
 var spliceMethod2 = newNum1.splice(3, newNum1.length-3)
 console.log('Your splice method removed is ', spliceMethod2);
 // splice del and add method
+
+console.log('splice add method');
 var newNum4 = [1,2,3,4,5,6,7]
 console.log('new array is ', newNum4);
-var addNewNum4 = newNum4.splice(1, 1, 'hello')
+var addNewNum4 = newNum4.splice(2, 3, 'hello')
 console.log(addNewNum4);
-console.log(newNum4);
+console.log('splice add ', newNum4);
 
 
 //add splice
 var newNum5 = [1,2,3,4] 
 console.log(newNum5);
-var splice5 = newNum5.splice(0,0, 'simeon')  
+var splice5 = newNum5.splice(0,0, 'simeon', 'beulah')  
 console.log(splice5);
 console.log(newNum5); // add 
 
 //Splice replce
-var newNum6 = [1,2,3,4] 
+
+console.log('Splice replace method');
+var newNum6 = [1,2,3,4,5,6,7,8,9] 
 console.log('new num ', newNum6);
-var spliceN6 = newNum6.splice(1,1, 'Beualh', 'Evania', 'baby2')
+var spliceN6 = newNum6.splice(3,5, 'Beualh', 'Evania', 'baby2')
 console.log(spliceN6);
 console.log(newNum6);
 
