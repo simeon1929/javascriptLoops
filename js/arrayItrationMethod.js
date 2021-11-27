@@ -22,3 +22,14 @@ fruites2.forEach((item, index, array )=>{
     console.log('Index is ', index);
     console.log('Item is ', item);
 })
+
+// map method 
+
+var priceList = [10, 40, 30, 20, 5]
+
+var newPrice = priceList.map(price=>{
+    //console.log('price', price);
+    return price + 10
+})
+
+console.log('new Price', newPrice);
