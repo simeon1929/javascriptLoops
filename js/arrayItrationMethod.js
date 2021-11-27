@@ -33,3 +33,39 @@ var newPrice = priceList.map(price=>{
 })
 
 console.log('new Price', newPrice);
+
+//filter method 
+
+var employee = [
+    {
+        name : 'simeon',
+        slary :1000
+
+    },
+    {
+        role : 'beulah',
+        slary: 2000
+    },
+    {
+        role : 'Evania',
+        slary: 4000
+    },
+    {
+        role : 'Selvam',
+        slary : 5000
+    }
+]
+
+var goodSlary = employee.filter(emp=>{
+    return emp.slary >= 3000
+})
+
+
+
+console.log(goodSlary);
+
+goodSlary.forEach(item =>{
+    console.log(item.role,  item.slary);
+})
+
+
