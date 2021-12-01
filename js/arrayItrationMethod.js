@@ -69,7 +69,7 @@ goodSlary.forEach(item =>{
 })
 
 
-// reduce method 
+// reduce method reduce 
 
 var number = [3,4,6,7,34]
 console.log('numbers are', number);
@@ -84,3 +84,14 @@ var redue = number.reduce(function(prevValue, currentValue, index){
 })
 
 console.log(redue);
+
+// nested Array method 
+console.log('Nested Array Method');
+
+var nesArray = [[1,4],[4,6],[3,5],[2,7]]
+console.log('Nested Array' , nesArray);
+var merge = nesArray.reduce(function(preVal, currVal, index){
+    return preVal.concat(currVal)
+})
+console.log('Merge is ' , merge);
+console.log('order ' , merge.sort());
