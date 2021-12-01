@@ -69,3 +69,18 @@ goodSlary.forEach(item =>{
 })
 
 
+// reduce method 
+
+var number = [3,4,6,7,34]
+console.log('numbers are', number);
+var redue = number.reduce(function(prevValue, currentValue, index){
+
+    console.log('prevus value is', prevValue);
+    console.log('current value is', currentValue);
+    console.log('index  is', index);
+
+    console.log('Add prev and current value ', prevValue + currentValue);
+    return prevValue + currentValue
+})
+
+console.log(redue);
