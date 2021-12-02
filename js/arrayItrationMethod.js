@@ -95,3 +95,11 @@ var merge = nesArray.reduce(function(preVal, currVal, index){
 })
 console.log('Merge is ' , merge);
 console.log('order ' , merge.sort());
+
+var removeRepat = merge.filter(function(item, index){
+    return merge.indexOf(item)== index
+});
+
+console.log(removeRepat);
+
+// need to check string value
